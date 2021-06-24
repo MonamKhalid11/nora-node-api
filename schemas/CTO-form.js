@@ -1,0 +1,47 @@
+const mongoose = require('mongoose')
+
+const CTOFormSchema = mongoose.Schema({
+
+    _id:mongoose.Schema.Types.ObjectId,
+    CompletionDate: Date,
+    SubmissionDate: Date,
+    starttime: Date,
+    endtime: Date,
+    deviceid: String,
+    subscriberid: String,
+    simid: String,
+    devicephonenum: String,
+    username: String,
+    duration: String,
+    text_audit:String,
+    interview_audit: String,
+    investigator_name: String,
+    searchtype: String,
+    searchtext: String,
+    caseid: String,
+    patient_name: String,
+    patient_sex: String,
+    patient_mobile: String,
+    patient_age: String,
+    patient_district_name: String,
+    date_tested_positive:String,
+    group_type: String,
+    confirm_ptdata: String,
+    to_number: String,
+    from_number:String,
+    response: String,
+    contact: String,
+    nocontact: String,
+    refusal_reason: String,
+    headings_count: String,
+    thanks: String,
+    comment: String,
+    instanceID: String,
+    instanceName: String,
+    formdef_version: String,
+    review_quality: String,
+    review_status: String,
+    KEY: String
+ 
+})
+module.exports= mongoose.model('ctoformdetails',CTOFormSchema)
